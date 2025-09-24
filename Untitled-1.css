@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Professional Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-bg-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .gradient-bg-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,0.15); }
+        .section-fade { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .section-fade.visible { opacity: 1; transform: translateY(0); }
+        .skill-bar { transition: width 1.5s ease-in-out; }
+        .floating { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed top-0 w-full z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold text-gray-800">Ashish</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition duration-300">Home</a>
+                    <a href="#education" class="text-gray-700 hover:text-purple-600 transition duration-300">Education</a>
+                    <a href="#projects" class="text-gray-700 hover:text-purple-600 transition duration-300">Projects</a>
+                    <a href="#certifications" class="text-gray-700 hover:text-purple-600 transition duration-300">Certifications</a>
+                    <a href="#skills" class="text-gray-700 hover:text-purple-600 transition duration-300">Skills</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section id="home" class="gradient-bg min-h-screen flex items-center pt-16">
+    <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white">
+                <h1 class="text-5xl lg:text-6xl font-bold mb-6">Ashish Pandey</h1>
+                <p class="text-xl mb-8">B.Pharma | M.Tech Student | Researcher</p>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Biomedical Science and Engineering student skilled in pharmaceuticals, medical devices and diagnostics, Excel, Power BI, Python, SQL, and machine learning, with experience in cleaning, processing, and analyzing large datasets. Experienced in predictive modeling, data visualization, and building data-driven solutions for decision-making. Strong problem-solving ability . Proficient in using data to drive strategic business outcomes.
+                </p>
+                
+                <!-- Contact Info Cards -->
+                <div class="grid md:grid-cols-2 gap-4 mb-8">
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-lg">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">📧</span>
+                            <div>
+                                <div class="text-sm opacity-80">Email</div>
+                                <div class="font-medium">ashish.pandey@iitg.ac.in</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-lg">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">📱</span>
+                            <div>
+                                <div class="text-sm opacity-80">Phone</div>
+                                <div class="font-medium">+91 99569 88715</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex space-x-4">
+                    <!-- LinkedIn Button -->
+                    <a href="https://www.linkedin.com/in/ashish-p15/" target="_blank" rel="noopener noreferrer"
+                       class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 shadow-lg inline-block text-center">
+                        💼 LinkedIn Profile
+                    </a>
+
+                    <!-- Resume Button -->
+                    <a href="/path/to/your/resume.pdf" download
+                       class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition duration-300 inline-block text-center">
+                        📄 Download Resume
+                    </a>
+                </div>
+            </div>
+            
+               <div class="text-center lg:text-right">
+                <div class="w-96 h-96 mx-auto lg:ml-auto mb-6 transform lg:translate-x-4 rounded-full overflow-hidden shadow-2xl">
+                    <img src="Image/ashish.png" alt="Ashish Pandey" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white section-fade">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Educational Qualifications</h2>
+            <div class="max-w-6xl mx-auto space-y-12">
+                
+                <!-- M.Tech -->
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="bg-gradient-to-r from-purple-500 to-blue-500 p-8 rounded-2xl text-white card-hover">
+                        <div class="text-6xl mb-4">🎓</div>
+                        <h3 class="text-2xl font-bold mb-4">Master of Technology (M.Tech)</h3>
+                        <p class="text-lg mb-2">Indian Institute of Technology, Guwahati</p>
+                        <p class="text-purple-200 mb-4">Specialization: Medical Devices and Diagnostics</p>
+                        <div class="flex justify-between items-center">
+                            <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">2024 - 2026</span>
+                            <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">CPI: 8.16</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800">Key Highlights</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start space-x-3">
+                                <span class="text-purple-500 mt-1">•</span>
+                                <span>The intersection of innovation, medicine, and human life.
+</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-purple-500 mt-1">•</span>
+                                <span>From biological challenges to elegant engineering solutions.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-purple-500 mt-1">•</span>
+                                <span>Master Thesis Project on "Design and Development of a Smart Spirometer with Integrated Patient Data Tracking"</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- B.Pharma -->
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800">Academic Excellence</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start space-x-3">
+                                <span class="text-blue-500 mt-1">•</span>
+                                <span>Comprehensive study of pharmaceutical sciences.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-blue-500 mt-1">•</span>
+                                <span>Practical training in drug formulation and analysis.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-blue-500 mt-1">•</span>
+                                <span>Bachelor Thesis Project on "Formulation and Evaluation of Norfloxacin Tablets"</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-gradient-to-r from-emerald-500 to-cyan-500 p-8 rounded-2xl text-white card-hover">
+                        <div class="text-6xl mb-4">💊</div>
+                        <h3 class="text-2xl font-bold mb-4">Bachelor of Pharmacy (B.Pharma)</h3>
+                        <p class="text-lg mb-2">Dr. APJ Abdul Kalam Technical University, Lucknow</p>
+                        <p class="text-emerald-100 mb-4">Pharmaceutical Sciences</p>
+                        <div class="flex justify-between items-center">
+                            <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">2020 - 2024</span>
+                            <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">CGPA: 7.71</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50 section-fade">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Projects</h2>
+            
+            <!-- Completed Projects -->
+            <style>
+/* Card hover effect to slightly "shake" on mouse hover */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-3px) rotate(-0.3deg);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+</style>
+
+<div class="mb-16">
+    <h3 class="text-2xl font-semibold text-center mb-12 text-gray-700">Completed Projects</h3>
+    <div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <!-- Project 1 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+            <div class="gradient-bg-3 h-48 flex items-center justify-center">
+                <img src="Image/Real state project image.jpg" alt="Real Estate Project" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8">
+                <h4 class="text-xl font-bold mb-4 text-gray-800">Machine Learning Based Real Estate Price Prediction and Recommendation System</h4>
+                <p class="text-gray-600 mb-4">
+                    Processed and structured 4,500+ real estate records for predictive analytics, built and validated machine learning models achieving an R2 score of 0.85 for property price prediction, and implemented a content-based recommendation system to deliver personalized property suggestions using vectorization and similarity algorithms.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                    <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">Python</span>
+                    <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Excel</span>
+                </div>
+                <!-- Direct link to GitHub -->
+                <a href="https://github.com/ashishpandey-1512/Real-estate-project" target="_blank" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300 inline-block">
+                    View Details →
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+            <div class="gradient-bg h-48 flex items-center justify-center">
+                <img src="Image/SQL Inventory project image.jpg" alt="SQL Project" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8">
+                <h4 class="text-xl font-bold mb-4 text-gray-800">Solving Inventory Inefficiencies Using Advanced SQL Analytics</h4>
+                <p class="text-gray-600 mb-4">
+                    Analyzed inventory and sales data from 100+ retail stores using MySQL to uncover trends in stock levels and operational performance, built interactive Power BI dashboards for real-time inventory tracking and demand forecasting, and automated workflows to reduce stockouts and enhance supply chain efficiency by 82%.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">MySQL</span>
+                    <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm">PowerBI</span>
+                    <span class="bg-teal-100 text-teal-600 px-3 py-1 rounded-full text-sm">Excel</span>
+                </div>
+                <!-- Direct link to GitHub -->
+                <a href="https://github.com/ashishpandey-1512/Inventory-inefficiencies" target="_blank" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300 inline-block">
+                    View Details →
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+            <!-- Ongoing Projects -->
+        <div>
+    <h3 class="text-2xl font-semibold text-center mb-12 text-gray-700">Ongoing Projects</h3>
+    <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="text-4xl mr-4">⚗️</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800">Master Thesis Project</h4>
+                            <!-- Bold Project Title in One Line with spacing -->
+                            <p class="text-gray-800 font-bold text-lg whitespace-nowrap mt-2 mb-2">
+                                Design and Development of a Smart Spirometer with Integrated Patient Data Tracking
+                            </p>
+                            <p class="text-purple-600 font-medium">In Progress</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Building a portable smart spirometer with ESP32 and pressure sensors to capture real-time respiratory data, applying machine learning models for accurate lung function analysis and anomaly detection, and enabling wireless connectivity (Bluetooth/Wi-Fi) for portable respiratory monitoring.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Thesis</span>
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Research</span>
+                        <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">Innovation</span>
+                    </div>
+                </div>
+                <!-- Progress box lowered using mt-6 -->
+                <div class="bg-gradient-to-r from-orange-500 to-amber-500 p-6 rounded-xl text-white text-center mt-6">
+                    <div class="text-5xl mb-4">📊</div>
+                    <h5 class="text-lg font-semibold mb-2">Progress Status</h5>
+                    <div class="bg-white bg-opacity-20 rounded-full h-3 mb-2">
+                        <div class="bg-white h-3 rounded-full" style="width: 65%"></div>
+                    </div>
+                    <p class="text-sm">50% Complete</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- Courses Section -->
+    <!-- <section id="courses" class="py-20 bg-white section-fade">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Professional Courses</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl border border-blue-100 card-hover">
+                    <div class="text-3xl mb-4">📚</div>
+                    <h4 class="text-lg font-semibold mb-2 text-gray-800">Course Name 1</h4>
+                    <p class="text-gray-600 text-sm mb-3">Institution/Platform Name</p>
+                    <p class="text-gray-500 text-sm">Brief description of the course content and skills gained.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-teal-50 p-6 rounded-xl border border-green-100 card-hover">
+                    <div class="text-3xl mb-4">🧪</div>
+                    <h4 class="text-lg font-semibold mb-2 text-gray-800">Course Name 2</h4>
+                    <p class="text-gray-600 text-sm mb-3">Institution/Platform Name</p>
+                    <p class="text-gray-500 text-sm">Brief description of the course content and skills gained.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-xl border border-orange-100 card-hover">
+                    <div class="text-3xl mb-4">💻</div>
+                    <h4 class="text-lg font-semibold mb-2 text-gray-800">Course Name 3</h4>
+                    <p class="text-gray-600 text-sm mb-3">Institution/Platform Name</p>
+                    <p class="text-gray-500 text-sm">Brief description of the course content and skills gained.</p>
+                </div>
+                
+                <!-- Add more course cards as needed -->
+            </div>
+        </div>
+    </section> -->
+
+   <!-- Certifications Section -->
+<section id="certifications" class="py-20 bg-white section-fade">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Certifications</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+            <!-- Certificate 1 -->
+            <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl border border-purple-100 card-hover">
+                <div class="text-3xl mb-4">🏆</div>
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Microsoft Excel from Beginner to Advance level</h4>
+                <p class="text-gray-600 text-sm mb-3">Udemy</p>
+                <p class="text-gray-500 text-sm mb-4">Completed Microsoft Excel (Beginner to Advanced) course on Udemy, covering data analysis, formulas, pivot tables, and automation tools.</p>
+                <a href="Image/Excel Certificate.jpg" target="_blank" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-700 transition duration-300">
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="bg-gradient-to-br from-blue-50 to-teal-50 p-6 rounded-xl border border-blue-100 card-hover">
+                <div class="text-3xl mb-4">🎖️</div>
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</h4>
+                <p class="text-gray-600 text-sm mb-3">Udemy</p>
+                <p class="text-gray-500 text-sm mb-4">Completed ‘The Ultimate MySQL Bootcamp’ on Udemy, gaining hands-on expertise in SQL queries, database design, data analysis, and optimization techniques.</p>
+                <a href="Image/SQL Certificate.jpg" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300">
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="bg-gradient-to-br from-green-50 to-lime-50 p-6 rounded-xl border border-green-100 card-hover">
+                <div class="text-3xl mb-4">🏅</div>
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">The Complete Python Bootcamp from Zero to Expert</h4>
+                <p class="text-gray-600 text-sm mb-3">Udemy</p>
+                <p class="text-gray-500 text-sm mb-4">Completed ‘The Complete Python Bootcamp’ on Udemy, mastering Python fundamentals, object-oriented programming, data analysis, and real-world project applications.</p>
+                <a href="Image/Python Certificate.jpg" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-green-700 transition duration-300">
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Certificate 4 -->
+            <div class="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-xl border border-orange-100 card-hover">
+                <div class="text-3xl mb-4">🏆</div>
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Microsoft Power BI: Data Analysis & AI Dashboards (2025)</h4>
+                <p class="text-gray-600 text-sm mb-3">Udemy</p>
+                <p class="text-gray-500 text-sm mb-4">Completed ‘Microsoft Power BI: Data Analysis & AI Dashboards (2025)’ on Udemy, focusing on data modeling, interactive visualizations, and advanced data-driven insights.</p>
+                <a href="Image/Power BI Certificatee.jpg" target="_blank" class="inline-block bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-orange-700 transition duration-300">
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Certificate 5 -->
+            <div class="bg-gradient-to-br from-pink-50 to-red-50 p-6 rounded-xl border border-pink-100 card-hover">
+                <div class="text-3xl mb-4">💻</div>
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Data Analyst: Professional Certificate in Data Analysis
+</h4>
+                <p class="text-gray-600 text-sm mb-3">Udemy</p>
+                <p class="text-gray-500 text-sm mb-4">Completed ‘Data Analyst: Professional Certificate in Data Analysis’ on Udemy, covering data cleaning, statistical analysis, visualization, and business decision-making.</p>
+                <a href="Image/Data Analyst Certificate.jpg" target="_blank" class="inline-block bg-pink-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-700 transition duration-300">
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Certificate 6 -->
+            <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-xl border border-yellow-100 card-hover">
+                <div class="text-3xl mb-4">🧪</div>
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">NumPy, SciPy, Matplotlib & Pandas A-Z: Machine Learning
+</h4>
+                <p class="text-gray-600 text-sm mb-3">Udemy</p>
+                <p class="text-gray-500 text-sm mb-4">Completed ‘NumPy, SciPy, Matplotlib & Pandas A-Z: Machine Learning’ on Udemy, focusing on data manipulation, scientific computing, data visualization, and building machine learning-ready datasets.</p>
+                <a href="Image/Machine Learning Certificate.jpg" target="_blank" class="inline-block bg-yellow-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-yellow-700 transition duration-300">
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Certificate 7 -->
+            <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-xl border border-indigo-100 card-hover">
+                <div class="text-3xl mb-4">🏆</div>
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Statistics and Hypothesis Testing for Data science</h4>
+                <p class="text-gray-600 text-sm mb-3">Udemy</p>
+                <p class="text-gray-500 text-sm mb-4">Completed ‘Statistics and Hypothesis Testing for Data Science’ on Udemy, focusing on statistical analysis, probability concepts, and hypothesis testing for data-driven decision making.</p>
+                <a href="Image/Statistics and Hypothesis Testing for Data science certificate.jpg" target="_blank" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-700 transition duration-300">
+                    View Certificate
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Work Experience Section
+    <section id="experience" class="py-20 bg-white section-fade">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Work Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-gradient-to-r from-purple-500 to-blue-500 p-8 rounded-2xl text-white card-hover">
+                    <div class="grid lg:grid-cols-4 gap-6 items-center">
+                        <div class="lg:col-span-1 text-center">
+                            <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-2xl">🏢</span>
+                            </div>
+                            <p class="text-sm opacity-80">2023 - Present</p>
+                        </div>jpg
+                        <div class="lg:col-span-3">
+                            <h3 class="text-2xl font-bold mb-2">Job Title</h3>
+                            <p class="text-lg mb-4 opacity-90">Company Name</p>
+                            <ul class="space-y-2 opacity-90">
+                                <li>• Key responsibility or achievement 1</li>
+                                <li>• Key responsibility or achievement 2</li>
+                                <li>• Key responsibility or achievement 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more experience cards as needed -->
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50 section-fade">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Skills & Expertise</h2>
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-3 gap-8">
+
+                <!-- Lab Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+    <div class="text-center mb-6">
+        <div class="text-5xl mb-4">🔬</div>
+        <h3 class="text-xl font-bold text-gray-800">Laboratory Skills</h3>
+    </div>
+    <div class="space-y-4">
+        <div>
+            <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-bold">Electrochemical & Sensor Techniques</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-2">
+                <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-full"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-bold">Medical Device Prototyping & Testing</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-2">
+                <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-full"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-bold">Pharmaceutical Analysis & Quality Control</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-2">
+                <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-full"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                <!-- Technical Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="text-center mb-6">
+                        <div class="text-5xl mb-4">💻</div>
+                        <h3 class="text-xl font-bold text-gray-800">Technical Skills</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+    <div class="flex justify-between mb-2">
+        <span class="text-gray-700">
+            <span class="font-bold whitespace-nowrap">Programming & Databases:</span> Python, MySQL
+        </span>
+    </div>
+    <div class="bg-gray-200 rounded-full h-2">
+        <div class="bg-gradient-to-r from-green-500 to-teal-500 h-2 rounded-full w-full"></div>
+    </div>
+</div>
+
+<div>
+    <div class="flex justify-between mb-2">
+        <span class="text-gray-700">
+            <span class="font-bold whitespace-nowrap">Data Analysis & Machine Learning:</span> Pandas, Numpy, Scikit-learn
+        </span>
+    </div>
+    <div class="bg-gray-200 rounded-full h-2">
+        <div class="bg-gradient-to-r from-green-500 to-teal-500 h-2 rounded-full w-full"></div>
+    </div>
+</div>
+
+<div>
+    <div class="flex justify-between mb-2">
+        <span class="text-gray-700">
+            <span class="font-bold whitespace-nowrap">Data Visualization:</span> Matplotlib, Seaborn, Power BI, Excel
+        </span>
+    </div>
+    <div class="bg-gray-200 rounded-full h-2">
+        <div class="bg-gradient-to-r from-green-500 to-teal-500 h-2 rounded-full w-full"></div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+
+                <!-- Bioinformatics Skills -->
+<div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+    <div class="text-center mb-6">
+        <div class="text-5xl mb-4">🧬</div>
+        <h3 class="text-xl font-bold text-gray-800">Bioinformatics</h3>
+    </div>
+    <div class="space-y-4">
+        <div>
+            <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-bold">Sequence Analysis</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-2">
+                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full w-full"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-bold">Molecular Modeling</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-2">
+                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full w-full"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-bold">Drug Design</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-2">
+                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full w-full"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="py-20 bg-white section-fade">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Position of Responsibility</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-gradient-to-r from-green-500 to-teal-500 p-8 rounded-2xl text-white card-hover">
+                    <div class="grid lg:grid-cols-4 gap-6 items-center">
+                        <div class="lg:col-span-1 text-center">
+                            <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-2xl">🤝</span>
+                            </div>
+                            <p class="text-sm opacity-80">Year</p>
+                        </div>
+                        <div class="lg:col-span-3">
+                            <h3 class="text-2xl font-bold mb-2">Core Team Member</h3>
+                            <p class="text-lg mb-4 opacity-90">Saathi Counselling Cell, IIT Guwahati</p>
+                            <p class="opacity-90">Organize events and manage volunteers to ensure seamless execution and a well-coordinated experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurricular Section -->
+    <section id="extracurricular" class="py-20 bg-gray-50 section-fade">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Extracurricular Activities</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4 text-center">🏆</div>
+                    <h4 class="text-lg font-semibold mb-2 text-gray-800 text-center">Mentor,An Initiative Of Samagra Shiksha By Assam Govt., Implemented By IITG</h4>
+                    <p class="text-gray-600 text-sm text-center">Taught Science and Math to Class 8–10 students in rural Assam and facilitated the formation of Science Clubs in schools to promote experiential learning.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4 text-center">🎭</div>
+                    <h4 class="text-lg font-semibold mb-2 text-gray-800 text-center">Core Team Member, Events Team, RIC'25, IIT Guwahati</h4>
+                    <p class="text-gray-600 text-sm text-center">Assisted in planning and executing events, coordinating logistics, and ensuring smooth event management.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4 text-center">🏅</div>
+                    <h4 class="text-lg font-semibold mb-2 text-gray-800 text-center">Volunteer, IISF’24, IIT Guwahati</h4>
+                    <p class="text-gray-600 text-sm text-center">Contributed to organizing and managing activities, supporting participants, and ensuring smooth execution of the event.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+<section id="contact" class="py-20 bg-white section-fade">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Let's Connect</h2>
+        <div class="max-w-2xl mx-auto">
+            <div class="gradient-bg p-8 rounded-2xl text-white text-center">
+                <h3 class="text-2xl font-bold mb-4">Ready to Collaborate?</h3>
+                <p class="mb-8">I'm always interested in new opportunities, research collaborations, and innovative projects.</p>
+
+                <div class="grid md:grid-cols-3 gap-4 justify-center">
+                    <!-- Email Button (both emails in To field) -->
+                    <a href="mailto:ashish.pandey@iitg.ac.in,ashishpandey9005@gmail.com" 
+                       class="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 inline-block">
+                        📧 Email Me
+                    </a>
+
+                    <!-- LinkedIn Button -->
+                    <a href="https://www.linkedin.com/in/ashish-p15/" target="_blank" rel="noopener noreferrer"
+                       class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition duration-300 inline-block">
+                        💼 LinkedIn
+                    </a>
+
+                    <!-- Call Me Button (shows number on click) -->
+                    <button id="callButton" 
+                        class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition duration-300 inline-block">
+                        📱 Call Me
+                    </button>
+                </div>
+
+                <!-- Phone Number (hidden initially) -->
+                <div id="phoneNumber" class="mt-4 text-xl font-bold text-white opacity-0 transition-opacity duration-300">
+                    📞 +91 99569 88715
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const callButton = document.getElementById('callButton');
+        const phoneNumber = document.getElementById('phoneNumber');
+
+        callButton.addEventListener('click', () => {
+            phoneNumber.style.opacity = 1; // directly show number
+        });
+    </script>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ashish Pandey. All rights reserved.</p>
+            <p class="text-gray-400 mt-2">Pharmaceutical Researcher | M.Tech Student | Innovation Enthusiast</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-fade').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Skill bar animation
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-bar');
+                    skillBars.forEach(bar => {
+                        bar.style.width = bar.style.width;
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('#skills .card-hover').forEach(card => {
+            skillObserver.observe(card);
+        });
+
+        // Button click handlers
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                const buttonText = this.textContent.trim();
+                if (buttonText.includes('LinkedIn')) {
+                    alert('LinkedIn profile would open here! Replace with your actual LinkedIn URL.');
+                } else if (buttonText.includes('Download') || buttonText.includes('Resume')) {
+                    alert('Resume download would start here! Add your actual resume file.');
+                } else if (buttonText.includes('Email') || buttonText.includes('Contact')) {
+                    alert('Email client would open here! Replace with your actual email address.');
+                } else if (buttonText.includes('Call')) {
+                    alert('Phone dialer would open here! Replace with your actual phone number.');
+                } else if (buttonText.includes('View Details') || buttonText.includes('View Certificate')) {
+                    alert('Detailed view would open here! Add links to your actual project details or certificates.');
+                }
+            });
+        });
+
+        // Mobile menu toggle (if needed)
+        const mobileMenuButton = document.querySelector('#mobile-menu-button');
+        const mobileMenu = document.querySelector('#mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97de6be2301745af',t:'MTc1NzY2OTc5Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
