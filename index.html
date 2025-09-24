@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row items-center justify-between">
+            <div class="text-center lg:text-left max-w-lg">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-4">Ashish Pandey</h1>
+                <p class="text-lg lg:text-xl mb-6">M.Tech Biomedical Science & Engineering | IIT Guwahati</p>
+                <p class="mb-6">Passionate about biomedical devices, data science, and healthcare innovation.</p>
+                <a href="#projects" class="px-6 py-3 bg-white text-blue-600 rounded-lg shadow hover:bg-gray-100">View Projects</a>
+            </div>
+            <div class="w-96 h-96 mx-auto lg:ml-auto mb-6 transform lg:translate-x-4 rounded-full overflow-hidden shadow-2xl">
+                <img src="Image/ashish.png" alt="Ashish Pandey" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6 lg:px-20 text-center">
+            <h2 class="text-3xl font-bold mb-6">About Me</h2>
+            <p class="max-w-2xl mx-auto">I am pursuing M.Tech in Biomedical Science and Engineering at IIT Guwahati. 
+                My expertise spans pharmacy, biomedical devices, and data-driven healthcare solutions. 
+                I have hands-on experience in medical device prototyping, SQL-based systems, and computational modeling.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 lg:px-20">
+            <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+            <div class="grid gap-8 md:grid-cols-2">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-semibold mb-4">Inventory Management System</h3>
+                    <p>Developed using SQL and Power BI for real-time tracking, demand forecasting, and warehouse optimization.</p>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-semibold mb-4">ESP32 Spirometry Device</h3>
+                    <p>Prototyped a low-cost IoT spirometry system using ESP32, Honeywell sensors, and custom data visualization.</p>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-semibold mb-4">Real Estate Price Prediction</h3>
+                    <p>Implemented a machine learning model for price prediction and recommendation system using Python.</p>
+                </div>
+                <!-- Project 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-semibold mb-4">Patient-Specific Hemodynamics</h3>
+                    <p>Research on computational modeling of coronary circulation using OpenFOAM and data science integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 lg:px-20 text-center">
+            <h2 class="text-3xl font-bold mb-6">Contact</h2>
+            <p class="mb-4">📧 Email: <a href="mailto:ashish@email.com" class="text-blue-600">ashish@email.com</a></p>
+            <p class="mb-4">🔗 GitHub: <a href="https://github.com/yourusername" target="_blank" class="text-blue-600">github.com/yourusername</a></p>
+            <p class="mb-4">💼 LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-blue-600">linkedin.com/in/yourusername</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800 text-white text-center">
+        <p>&copy; 2025 Ashish Pandey. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
